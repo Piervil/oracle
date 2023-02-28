@@ -1,0 +1,271 @@
+@use 'base';
+@use 'button';
+@use 'mixin';
+
+
+// SECTION HERO
+.hero {
+  background-color: base.$bg;
+  padding: 5rem 0;
+  .hero__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.hero__info {
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  .hero__line {
+    width: 5rem;
+    border: 2px solid #ff4500;
+    margin-bottom: 2.5rem;
+  }
+  p {
+    width: 90%;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+// SECTION TECH
+.tech {
+  padding: 5rem 0;
+  h2 {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-bottom: 3rem;
+  }
+}
+.tech__flex {
+  display: flex;
+  .tech__info {
+    h3 {
+      font-size: 3rem;
+      padding-bottom: 2rem;
+    }
+    p {
+      padding-bottom: 2rem;
+      width: 80%;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// SECTION STUDENT 
+.student {
+  width: 95%;
+  margin: 3rem auto;
+  border-radius: .5rem;
+  background-color: base.$bg;
+  padding: 3rem 2rem;
+  .student__title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+  }
+  .hero__line {
+    width: 5rem;
+    border: 2px solid #ff4500;
+    margin-bottom: 2.5rem;
+  }
+}
+.student__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  span {
+    padding-block: .5rem;
+  }
+}
+.student__text {
+  width: 49%;
+  display: flex;
+  gap: 2rem;
+  .icon {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  p {
+    width: 90%;
+    font-size: 1.4rem;
+  }  
+}
+
+// SECTION PROGRAM
+.program {
+  .program__title {
+    margin-left: 3.5rem;
+    padding-bottom: 5rem;
+  }
+}
+.program__flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  .program__info {
+    display: flex;
+    gap: 2rem;
+    width: 48%;
+  }
+  .fa-solid {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+  }
+  p {
+    font-size: 1.4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+// SECTION WORK
+.work {
+  background-color: base.$bg;
+  padding: 4rem 0;
+  .work__flex {
+    display: flex;
+    gap: 3rem;
+  }
+  .work__info {
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      padding-bottom: 1rem;
+    }
+    p {
+      width: 85%;
+      font-size: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+.work__image {
+  img {
+    width: 90rem;
+    border-radius: 1rem;
+  }
+}
+
+// RESPONSIVE DESIGN
+@media screen and (max-width: 995px) {
+  .hero__flex {
+    flex-direction: column;
+  }
+  .hero__info {
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      padding-bottom: 1rem;
+    }
+    p {
+      width: 100%;
+      font-size: 1.5rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  // SECTION TECH
+.tech__flex {
+  flex-direction: column-reverse;
+  .tech__info {
+    h3 {
+      font-size: 3rem;
+      text-align: center;
+      padding-block: 2rem;
+    }
+    p {
+      padding-bottom: 2rem;
+      width: 100%;
+      font-size: 1.4rem;
+    }
+  }
+  .tech__video {
+    iframe {
+      width: 25rem;
+      height: 15rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+// SECTION STUDENT 
+.student {
+  width: 95%;
+  margin: 3rem auto;
+  .student__title {
+    font-size: 2.5rem;
+  }
+}
+.student__info {
+  gap: 2rem;
+}
+.student__text {
+  width: 100%;
+  .icon {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  p {
+    width: 100%;
+    font-size: 1.4rem;
+  }  
+}
+
+// SECTION PROGRAM
+.program {
+  .program__title {
+    margin-left: 3.5rem;
+    font-weight: 800;
+    padding-bottom: 5rem;
+  }
+}
+.program__flex {
+  .program__info {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+  p {
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+// SECTION WORK
+.work {
+  .work__flex {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .work__info {
+    p {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  }
+}
+.work__image {
+  img {
+    width: 90rem;
+    border-radius: 1rem;
+  }
+}
+}
+

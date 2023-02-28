@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #161513;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.btn {
+  background-color: #312D2A;
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0.4rem;
+}
+.btn:hover {
+  background-color: #000000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #181616;
+  color: white;
+}
+footer a {
+  color: beige;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #d6e5e5;
+  padding: 5rem 0;
+}
+.hero .hero__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__info h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.hero__info .hero__line {
+  width: 5rem;
+  border: 2px solid #ff4500;
+  margin-bottom: 2.5rem;
+}
+.hero__info p {
+  width: 90%;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.tech {
+  padding: 5rem 0;
+}
+.tech h2 {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-bottom: 3rem;
+}
+
+.tech__flex {
+  display: flex;
+}
+.tech__flex .tech__info h3 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.tech__flex .tech__info p {
+  padding-bottom: 2rem;
+  width: 80%;
+  font-size: 1.4rem;
+}
+
+.student {
+  width: 95%;
+  margin: 3rem auto;
+  border-radius: 0.5rem;
+  background-color: #d6e5e5;
+  padding: 3rem 2rem;
+}
+.student .student__title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.student .hero__line {
+  width: 5rem;
+  border: 2px solid #ff4500;
+  margin-bottom: 2.5rem;
+}
+
+.student__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.student__info span {
+  padding-block: 0.5rem;
+}
+
+.student__text {
+  width: 49%;
+  display: flex;
+  gap: 2rem;
+}
+.student__text .icon {
+  font-size: 2rem;
+}
+.student__text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.student__text p {
+  width: 90%;
+  font-size: 1.4rem;
+}
+
+.program .program__title {
+  margin-left: 3.5rem;
+  padding-bottom: 5rem;
+}
+
+.program__flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.program__flex .program__info {
+  display: flex;
+  gap: 2rem;
+  width: 48%;
+}
+.program__flex .fa-solid {
+  font-size: 2rem;
+}
+.program__flex h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+.program__flex p {
+  font-size: 1.4rem;
+  padding-bottom: 5rem;
+}
+
+.work {
+  background-color: #d6e5e5;
+  padding: 4rem 0;
+}
+.work .work__flex {
+  display: flex;
+  gap: 3rem;
+}
+.work .work__info h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+.work .work__info p {
+  width: 85%;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.work__image img {
+  width: 90rem;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 995px) {
+  .hero__flex {
+    flex-direction: column;
+  }
+  .hero__info h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  .hero__info p {
+    width: 100%;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .tech__flex {
+    flex-direction: column-reverse;
+  }
+  .tech__flex .tech__info h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding-block: 2rem;
+  }
+  .tech__flex .tech__info p {
+    padding-bottom: 2rem;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .tech__flex .tech__video iframe {
+    width: 25rem;
+    height: 15rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .student {
+    width: 95%;
+    margin: 3rem auto;
+  }
+  .student .student__title {
+    font-size: 2.5rem;
+  }
+  .student__info {
+    gap: 2rem;
+  }
+  .student__text {
+    width: 100%;
+  }
+  .student__text .icon {
+    font-size: 2rem;
+  }
+  .student__text h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .student__text p {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .program .program__title {
+    margin-left: 3.5rem;
+    font-weight: 800;
+    padding-bottom: 5rem;
+  }
+  .program__flex .program__info {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+  .program__flex p {
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+  }
+  .work .work__flex {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .work .work__info p {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .work__image img {
+    width: 90rem;
+    border-radius: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
