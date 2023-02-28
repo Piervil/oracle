@@ -33,15 +33,15 @@ img {
 }
 
 .btn {
-  background-color: base.$btn-bg;
-  color: base.$white;
+  background-color: $btn-bg;
+  color: $white;
   font-size: 1.2rem;
   display: inline-block;
   padding: 1rem;
   margin: 1.5rem 0;
   border-radius: .4rem;
   &:hover {
-    background-color: base.$black;
+    background-color: $black;
   }
 }
 
